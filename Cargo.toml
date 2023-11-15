@@ -1,0 +1,19 @@
+[package]
+name = "py-sandbox"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustpython-vm = { git = "https://github.com/RustPython/RustPython.git", ref = "6d23daa480e6fec4a84c1585e715e16364816de7" }
+rustpython-stdlib = { git = "https://github.com/RustPython/RustPython.git", ref = "6d23daa480e6fec4a84c1585e715e16364816de7" }
+wai-bindgen-rust = "0.2.3"
+lazy_static = "1.4.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.dev]
+opt-level = 1
+incremental = true

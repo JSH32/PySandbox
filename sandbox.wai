@@ -1,0 +1,24 @@
+// sandbox.wai
+
+// Stdout for a specific execution.
+record stdout {
+  out: string,
+  err: string,
+}
+
+// Serialized value returned from python expression.
+record value {
+  value: string,
+  datatype: string,
+}
+
+record evalresult {
+  stdout: stdout,
+  value: option<value>,
+}
+
+// Execute python code in the python VM instance.
+exec: func(code: string) -> stdout
+
+// Evaluate python expression in the python VM instance.
+eval: func(expr: string) -> evalresult
