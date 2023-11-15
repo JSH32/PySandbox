@@ -16,7 +16,7 @@ You will need Rust and `wai-bindgen` installed from [WAI](https://github.com/was
 
 ## Usage
 ```py
-from py_sandbox import create_sandbox
+from wasm_py_sandbox import create_sandbox
 
 # each sandbox has its own memory.
 sandbox = create_sandbox()

@@ -12,7 +12,7 @@ setup(
     license='MIT',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/tomchen/example_pypi_package',
+    url='https://github.com/JSH32/PySandbox',
     project_urls={
         'Documentation': 'https://github.com/JSH32/PySandbox',
         'Bug Reports': 'https://github.com/JSH32/PySandbox/issues',
