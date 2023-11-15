@@ -9,6 +9,7 @@ setup(
     package_dir={'': 'py_src'},
     version='0.1.0',
     packages=find_namespace_packages(where='py_src'),
+    package_data={'': ['*.wasm']},
     install_requires=[
         'wasmer==1.1.0',
         'wasmer-compiler-cranelift==1.1.0',
