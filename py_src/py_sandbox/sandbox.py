@@ -1,5 +1,5 @@
 import os
-from bindings import Sandbox
+from .bindings import Sandbox
 from wasmer import Store, Module, wasi
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
